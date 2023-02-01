@@ -54,13 +54,13 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "sinon": "^7.5.0",
-    "leaflet": "^1.6.0"
+    "leaflet": "^1.9.3"
   },
   "dependencies": {
     "idb": "^4.0.5"
   },
   "peerDependencies": {
-    "leaflet": "^1.6.0"
+    "leaflet": "^1.9.3"
   },
   "husky": {
     "hooks": {

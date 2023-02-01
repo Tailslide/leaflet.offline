@@ -241,9 +241,10 @@ export async function removeTile(key) {
  * @returns {Promise<Blob>}
  */
 export async function getTile(key) {
-  return (await dbPromise).get(tileStoreName, key).then((result) => result.blob);
+  return (await dbPromise)
+    .get(tileStoreName, key)
+    .then((result) => (result === undefined ? undefined : result.blob));
 }
-
 /**
  * Remove everything
  *
