@@ -1,7 +1,7 @@
 {
-  "name": "leaflet.offline",
-  "version": "2.0.0-beta.4",
-  "description": "Offline tilelayer for leaflet",
+  "name": "leaflet.offline.tailslide",
+  "version": "2.0.0-beta.6",
+  "description": "Offline tilelayer for leaflet with downsampling",
   "main": "dist/bundle.js",
   "scripts": {
     "docs": "jsdoc2md src/*.js > docs/api.md",
@@ -18,18 +18,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allartk/leaflet.offline.git"
+    "url": "git+https://github.com/Tailslide/leaflet.offline.git"
   },
   "keywords": [
     "leaflet",
     "offline"
   ],
-  "author": "Allart Kooiman",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/allartk/leaflet.offline/issues"
+    "url": "https://github.com/Tailslide/leaflet.offline/issues"
   },
-  "homepage": "https://github.com/allartk/leaflet.offline#readme",
+  "homepage": "https://github.com/Tailslide/leaflet.offline#readme",
   "devDependencies": {
     "@rollup/plugin-buble": "^0.20.0",
     "browser-sync": "^2.26.7",
