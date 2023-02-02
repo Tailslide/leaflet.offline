@@ -1,12 +1,25 @@
-# leaflet.offline version 2.x
+This branch is from a failed PR here: https://github.com/allartk/leaflet.offline/pull/72
+I am keeping it around since it has functionality not in the main branch
+(auto downloading of tiles, downsampling of missing tiles when offline)
 
-[![npm version](https://badge.fury.io/js/leaflet.offline.svg)](https://badge.fury.io/js/leaflet.offline)
-[![Build Status](https://travis-ci.org/allartk/leaflet.offline.png?branch=master)](https://travis-ci.org/allartk/leaflet.offline)
+Adds the following options:
+ *   saveOnLoad: true - saves tiles to offline cache as they are loaded online
+ *   downsample: true - if offline and tile missing for a given zoom level, downsample one from a lower zoom level 
+
+I think this makes for a nicer offline experience.. the user never sees blank tiles, and everything they view online is later viewable offline.  Here is an example of what a downsampled tile looks like:
+
+These can get turned on with these settings:
+
+
+Downsampling looks like this:
+![image](https://user-images.githubusercontent.com/5757188/122471718-d4527480-cf7c-11eb-92ca-6516f557308e.png)
+
+
+
+# leaflet.offline version 2.x
 
 Just a modern and slim library to store tiles offline.
 
-- [example](http://allartk.github.io/leaflet.offline/)
-- [api docs](docs/api.md)
 
 Warning: The api of version 2 is different from version 1. 2 is ready (but tests are incomplete)
 
